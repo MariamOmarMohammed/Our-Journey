@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+:root{
+    --backgroundColor: #cdcdcd;
+    --mainColor: #37517e;
+    --secondColor: #47b2e4;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 5% 0;
+}
+h2{
+    color: var(--mainColor);
+    font-weight: 700;
+}
+h4{
+    color: var(--secondColor);
+    font-weight: 700;
+}
+.bg{
+    background-color: var(--backgroundColor);
+}
+.line{
+    width: 10%;
+    height: 2px;
+    background: #ddd;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 3px;
+    background: var(--secondColor);
+}
+/* start header*/
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/codelikeagirl.png);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.title{
+    height: 70vh;
+}
+.title .titleContent h1{
+    font-size: 3.5em;
+    margin: 0.5em 0;
+}
+.title .titleContent p{
+    text-align: justify;
+}
+.titleContent a:hover{
+    background: var(--secondColor);
+}
+/* end header */
+
+/* start about section */
+.content span{
+    color: var(--secondColor);
+    font-weight: bold;
+}
+/* end about section */
+
+/* start work section */
+#work img{
+    filter: grayscale(1);
+}
+#work img:hover{
+    filter: grayscale(0);
+}
+/* end work section */
+/* end intructor section */
+.collection i{
+    width: 1.7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    color: var(--secondColor);
+    margin-bottom: 10px;
+}
+
+
+.image2 {
+
+    height: 389px;
+    width: 100%;
+
+}
+
+footer {
+   text-align: center;
+   font-weight: bolder;
+   padding-top:10px;
+}
+/* end intructor section */
